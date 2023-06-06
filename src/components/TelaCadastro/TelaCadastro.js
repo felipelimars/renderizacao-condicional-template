@@ -1,14 +1,13 @@
+import TelaLogin from "../TelaLogin/TelaLogin";
 import { Form, FormContainer, Input, StyledLabel, SendButton, BackToLoginButton } from "./styled";
+import TelaPrincipal from "../TelaPrincipal/TelaPrincipal";
 
-function TelaCadastro() {
+function TelaCadastro({ mudarTela }) {
   const cadastrar = () => {
-    // validação de cadastro ainda será visto mais pra frente no curso
-    alert("Cadastro realizado com sucesso, mas falta fazer a prática 3 e remover esse alerta")
+    mudarTela("principal")
   }
 
-  const mostrarTelaLogin = () => {
-    alert("Faça a prática 2 e remova esse alerta")
-  }
+  const mostrarTelaLogin = () => mudarTela("login")
 
   return (
     <FormContainer>
